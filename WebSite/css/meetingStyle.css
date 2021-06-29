@@ -1,0 +1,7 @@
+
+#back{
+    background: linear-gradient(to bottom right,red,blue);
+    border: 5px  blue;
+    width:420px;
+    overflow: hidden;
+}

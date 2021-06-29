@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background: plum;
+}
+
+h1{
+    color:rebeccapurple;
+    position: relative;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    color: rgb(50, 87, 102);
+    font-weight: bold;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box{
+    width: 800px;
+    height: 400px;
+    overflow-y: scroll;
+    background: white;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid rebeccapurple;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th{
+    background: rebeccapurple;
+    color: lightgray;
+    position: sticky;
+    top: 0;
+}
+
+
+.back{
+    text-align: center;
+    display: block;
+    margin-top: 250px;
+    float: left;
+    position: fixed;
+}
+
+.backToHome{
+    border: 1px solid rebeccapurple;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: monospace;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    color: rebeccapurple;
+}
+
+.backToHome:hover{
+    color:  plum;
+}
+
+.backToHome::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rebeccapurple;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.backToHome:hover::before{
+    height: 180%;
+}

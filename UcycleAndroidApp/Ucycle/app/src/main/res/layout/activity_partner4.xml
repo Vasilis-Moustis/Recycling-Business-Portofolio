@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".partner4">
+
+    <Button
+        android:id="@+id/p4b"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
+        android:background="#090909"
+        android:text="Back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="341dp"
+        android:layout_height="470dp"
+        android:text="Τα νέα Peugeot 208, 2008 και 508 έχουν ένα πολύ υψηλό ποσοστό ανακυκλώσιμων υλικών. Συγκεκριμένα γίνεται χρήση φυσικών ινών για την ενίσχυση του ταμπλό, χρήση ανακυκλωμένου πολυπροπυλενίου στις προστατευτικές ποδιές (για τον αέρα κάτω από το δάπεδο, κάτω από το ρεζερβουάρ, στον αερόσακο, στους εμπρός / πίσω θόλους και στους εμπρός /πίσω προφυλακτήρες) αλλά και αντίστοιχη ανακυκλωμένου πολυαμιδίου στα τάσια των τροχών και της πολλαπλής εισαγωγής, καθώς και στο συγκρότημα βεντιλατέρ-κινητήρα. https://www.peugeot.gr/ "
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="317dp"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif"
+        android:text="Peugeot"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+</androidx.constraintlayout.widget.ConstraintLayout>

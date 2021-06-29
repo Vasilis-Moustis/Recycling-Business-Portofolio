@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".partner3">
+
+    <Button
+        android:id="@+id/p3b"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
+        android:background="#090909"
+        android:text="Back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="317dp"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif"
+        android:text="Norton Point"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="341dp"
+        android:layout_height="470dp"
+        android:text="Η συγκεκριμένη ακολουθεί μια διαφορετική τακτική ως προς την προστασία του περιβάλλοντος. Πέρα από τη χρήση του ανακυκλωμένου πλαστικού για την κατασκευή γυαλιών ηλίου, η εταιρία δωρίζει το 5% των κερδών της για έρευνες για την εξάλειψη του πλαστικού στους ωκεανούς. https://www.nortonpoint.com/ "
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+</androidx.constraintlayout.widget.ConstraintLayout>

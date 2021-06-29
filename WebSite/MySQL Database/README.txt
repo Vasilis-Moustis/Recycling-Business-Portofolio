@@ -1,0 +1,3 @@
+Se periptwsi pou den douleuei na ginei afairesi tou engine specification sto telos kathe create table...
+
+-> ( ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;) <-

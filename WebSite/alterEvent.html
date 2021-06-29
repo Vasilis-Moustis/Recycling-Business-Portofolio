@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/alterEventStyle.css">
+    <title>Alter Event</title>
+
+</head>
+
+<body>
+    <form class="alterEvent" action="postalteration.php" method="post">
+
+        <label for="preventname">Event's name to be altered</label><br>
+        <input type="text" id="preventname" class="event_input" name="preventname" placeholder="eg my event to edit" required><br>
+
+        <h4>Please fullfil the boxes below with the new information of the event </h4>
+
+        <label for="eventname">Event Name</label><br>
+        <input type="text" id="eventname" class="event_input" name="eventname" placeholder="eg my creative event" required><br><br>
+
+        <label for="eventdate">Date:</label><br>
+        <input type="date" id="eventdate" class="event_input" name="eventdate" required><br><br>
+
+        <label for="starttime">Event Start Time</label><br>
+        <input type="text" id="starttime" class="event_input" name="starttime" placeholder="eg 12 30" required><br><br>
+
+        <label for="endtime">Event End Time</label><br>
+        <input type="text" id="endtime" class="event_input" name="endtime" placeholder="eg 12 50" required><br><br>
+
+        <label for="invited">Invited Users</label><br>
+        <input type="text" id="invited" class="event_input" name="invited" placeholder="john,maria(this is case sensitive)"><br><br>
+
+        <input type="submit" value="Submit" style="border-radius: 5px; padding: 10px 12px; cursor: pointer; color: aquamarine; background-color: magenta; box-sizing: border-box;">
+        <a href="eventpage.php">
+            <input type="button" value="Back" style="border-radius: 5px; padding: 10px 12px; cursor: pointer; color: aquamarine; background-color: magenta; box-sizing: border-box;" />
+        </a>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<title>UCYCLE Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: darkblue;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('recycle.png');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("about.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("volunteers.png");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="indexOr.php" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> LOGIN</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="indexOr.php" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LOGIN</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap; background-color:mediumaquamarine;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">UCYCLE</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT US</h3>
+  <p class="w3-center"><em>We protect what we love!Planet!!!</em></p>
+  <p>Η Ανακύκλωση στις μέρες μας αποτελεί βασική προϋπόθεση για την προστασία του περιβάλλοντος και του μέλλοντός μας. Δεν είναι μια εφήμερη τάση της εποχής, αλλά αντίθετα, υποχρέωση κάθε πολιτισμένης κοινωνίας και κάθε πολίτη που σέβεται και εκτιμά τον εαυτό του. Κάθε κοινωνίας και κάθε πολίτη που έχει ως στόχο τη βελτίωση της ποιότητας ζωής του.Βασίζεται κυρίως στη πληθώρα υλικών της καθημερινότητάς μας, που μπορούν να επαναχρησιμοποιηθούν. Ο πληθυσμός αυξάνεται συνεχώς και αυξάνεται εξίσου η κατανάλωση προϊόντων, επομένως και τα απορρίμματα. Οπότε, γεννήθηκε η ανάγκη της ανακύκλωσης, αφού οι χωματερές γεμίζουν από σκουπίδια και πλέον ξεχειλίζουν. Τα υλικά που μπορούν να κατεργαστούν και να χρησιμοποιηθούν εκ νέου ξεχωρίζονται, συλλέγονται και αποτελούν πρώτη ύλη για ανακυκλωμένα προϊόντα.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Team UCYCLE</b></p><br>
+      <img src="Logo.png" class="w3-round w3-image w3-hover-opacity-off" alt="Logo" width="500" height="350">
+    </div>
+    <p style="font: size 16px;">
+      Είμαστε μια ομάδα φοιτητών που θέλουμε να συμβάλλουμε στην ανακύκλωση υλικών και στη προστασία του περιβάλλοντος.
+      Ως <strong>όραμα</strong> έχουμε την μεγαλύτερη αξιοποίηση της ανακύκλωσης από όλους τους πολίτες, τη μείωση πλαστικών σε χωματερές, τη κατάργηση των πλαστικών μιας χρήσης στη χώρα μας και την ανάπτυξη της περιβαλλοντικής συνείδησης σε όλους.Είναι σημαντικό να καταλάβουν όλοι τι επιπτώσεις έχουν οι πράξεις μας στο πλανήτη. Όλοι μπορούμε να μαζέψουμε τις συσκευασίες από αντικείμενα που χρησιμοποιούμε καθημερινά και να μην πετάμε γύρω μας σκουπίδια. Δεν μπορούμε να αλλάξουμε την περιβαλλοντική ρύπανση, έχει γίνει δυστυχώς. Αυτό που μπορούμε να κάνουμε είναι να περιορίσουμε το πλαστικό στη ζωή μας ή τουλάχιστον να το ανακυκλώνουμε. Μικρά βήματα, αλλά σωστά. Ο κάθε πολίτης ξεχωριστά είναι ένα βήμα για ένα καλύτερο περιβάλλον. Αφορά τη ζωή και την υγεία μας, 
+      όλοι μπορούμε να κάνουμε κάτι.
+      Ως <strong>στόχο</strong> έχουμε αρχικά να μπορέσουμε να καλύψουμε όσο περισσότερες πόλεις της Ελλάδος κι αργότερα να μπορέσουμε να επεκταθούμε παγκοσμίως. Η προβολή επίσης νέων εταιρειών που αξιοποιούν τα ανακυκλωμένα υλικά, θα μπορέσει να ωθήσει περισσότερες επιχειρήσεις να ανακυκλώσουν, να αναπτυχθούν σε αυτόν το τομέα και να συνεργαστούν μαζί μας.
+      Κάθε πολίτης μπορεί να χρησιμοποιεί την εφαρμογή που έχει η Ucycle, ώστε να βρίσκει τα σημεία διαλογής, να προσφέρει τα ανακυκλώσιμα υλικά που έχει συλλέξει είτε σε κάποιον υπάλληλο είτε σε ειδικά διαμορφωμένο μηχάνημα και να λαμβάνει το χρηματικό ποσό που αντιστοιχεί στο είδος και τη ποσότητα των υλικών. Η εφαρμογή απευθύνεται σε οποιονδήποτε διαθέτει τραπεζικό λογαριασμό και κινητό τηλέφωνο.
+    </p>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">What we achieved this year:</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Had more people joining our eco friendly and rewarding cause</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:28%">28%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Extended our services to new areas</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:73%">73%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Increased our customers' will to recycle</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:57%">57%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Having a passion for saving our planet</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-large">7+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-large">10+</span><br>
+    Recycling and Customer Service Centers
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-large">30,000+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-large">5+</span><br>
+    Events
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-large">2,410,000+</span><br>
+    Returned Funds
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-large">18 Tons+</span><br>
+    Recycled materials
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-large">9+</span><br>
+    Supported Materials 
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-large">2 years+</span><br>
+    On trying to save the world
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center"><em>Photos from our Events and Friends</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w-center">
+    
+    <div class="w3-col m3">
+      <img src="Collect.jpg" style=" width:200px; left: 0px; top: 0px; margin: 5px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Beach cleaning">
+    </div>
+    
+    <div class="w3-col m3">
+      <img src="ocean pollution.jpg" style="width:200px; left: 0px; top: 0px; margin: 5px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Ocean pollution">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="offering.jpg" style="width:200px;  left: 0px; top: 0px; margin: 5px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Offering">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="materials.jpg" style="width:200px;  left: 0px; top: 0px; margin: 5px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Plastic Bottles">
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-blue w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE WE WORK</h3>
+  <p class="w3-center"><em>We'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Πειραιάς, Ελλάδα<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 2104142000<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: Ucycle@mail.com<br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p style="text-align: center; "><i>"Recycling takes a little effort on your part, but makes a big difference to the world!"</i></p>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Ucycle Team</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+

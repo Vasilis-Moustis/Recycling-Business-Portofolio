@@ -1,0 +1,14 @@
+body{
+    background-color: mediumaquamarine;
+    padding: 20px 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.backToHome{
+    border-radius: 5px; 
+    padding: 10px 12px; 
+    cursor: pointer; 
+    color: aquamarine; 
+    background-color: magenta; 
+    box-sizing: border-box;
+}

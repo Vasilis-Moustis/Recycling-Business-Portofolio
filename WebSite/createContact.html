@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/createCon.css">
+    <title>Add a Contact</title>
+
+</head>
+
+<body style="background-color:seagreen">
+    <form class="formEvent" action="postcontact.php" method="post" style="background-color: seagreen;">
+
+        <div class="form_title">Create a new Contact</div><br>
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" class="event_input" name="fullname" placeholder="Enter full name..." required><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" class="event_input" name="email" placeholder="Enter e-mail..." required><br><br>
+
+        <label for="phone">Phone Number</label><br>
+        <input type="number" id="phone" class="event_input" name="phone" placeholder="Enter Phone..." required><br><br>
+
+        <label for="work">Work Place</label><br>
+        <input type="text" id="work" class="event_input" name="work" placeholder="Enter career details..." required><br><br>
+
+        <label for="address">Address</label><br>
+        <input type="text" id="address" class="event_input" name="address" placeholder="Enter address..." required><br><br>
+
+        <input type="submit" value="Submit" style="border-radius: 5px; padding: 10px 12px; cursor: pointer; color: aquamarine; background-color:  rgb(199, 143, 21); box-sizing: border-box;">
+        <a href="contactPage.php">
+            <input type="button" value="Back" style="border-radius: 5px; padding: 10px 18px; cursor: pointer; color: aquamarine; background-color:  rgb(199, 143, 21); box-sizing: border-box;">
+        </a>
+    </form>
+</body>
+
+</html>

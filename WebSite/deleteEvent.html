@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/deleteEventStyle.css">
+    <title>Delete event</title>
+
+</head>
+
+<body>
+    <form action="noEvent.php" method="post">
+
+        <label for="deletename">Event's name to be deleted</label><br>
+        <input type="text" id="deletename" class="deleted_input" name="deletename" placeholder="eg my event to delete" required><br>
+        <br>
+        <input type="submit" value="Submit" style="border-radius: 5px; padding: 10px 12px; cursor: pointer; color: aquamarine; background-color: magenta; box-sizing: border-box;">
+        <a href="eventpage.php">
+            <input type="button" value="Back" style="border-radius: 5px; padding: 10px 12px; cursor: pointer; color: aquamarine; background-color: magenta; box-sizing: border-box;" />
+        </a>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/messageStyle.css">
+    <title>Send a message</title>
+</head>
+
+<body>
+    <form action="messagesend.php" method="post">
+        <label for="recipient">Send Message To:</label><br>
+        <input type="text" id="recipient" class="event_input" name="recipient" required><br><br>
+
+        <label for="mess">Message:</label><br>
+        <input type="text" id="mess" class="event_input" name="mess" required><br><br>
+
+        <input type="submit" name="SubmitButton" value="Submit" style="border-radius: 5px; padding: 10px 12px; cursor: pointer; color: aquamarine; background-color: magenta; box-sizing: border-box;" />
+        <a href="homepage.php">
+            <input type="button" value="Back" style="border-radius: 5px; padding: 10px 12px; cursor: pointer; color: aquamarine; background-color: magenta; box-sizing: border-box;" />
+        </a>
+    </form>
+</body>
+
+</html>

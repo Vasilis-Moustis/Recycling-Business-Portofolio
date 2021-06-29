@@ -1,0 +1,51 @@
+body{
+    background-color: mediumaquamarine;
+    padding: 20px 40px;
+}
+.formEvent{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    background-color: mediumaquamarine;
+}
+
+.formEvent *{
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.form_title{
+    font-size: 2em;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: rgba(161, 31, 155, 0.774);
+}
+
+label{
+    font-weight: 600;
+    padding: 10px 0;
+    color: mediumvioletred;
+}
+
+.event_input{
+    -webkit-appearance: none;
+
+    width:100%;
+    max-width: 228px;
+
+    padding: 0.8em;
+    font-size: 0.9em;
+    font-family: sans-serif;
+
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background: white;
+}
+
+.event_input:focus{
+    background: rgb(90, 169, 214);
+}
+
+.event_input::placeholder{
+    color: black;
+}
