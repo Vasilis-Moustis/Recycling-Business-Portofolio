@@ -30,11 +30,6 @@ CREATE TABLE `localcon` (
   `phone` varchar(128) NOT NULL
 ) ;
 
-CREATE TABLE `complains` (
-  `whocomplains` varchar(128) NOT NULL,
-  `complaincontent` varchar(128) NOT NULL
-) ;
-
 
 CREATE TABLE `messages` (
   `sender` varchar(100) NOT NULL,
