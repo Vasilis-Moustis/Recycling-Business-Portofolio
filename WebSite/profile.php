@@ -11,97 +11,60 @@ if (!isset($_SESSION['login_user'])) {
     <title>Your Home Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link href="style.css" rel="stylesheet" type="text/css">-->
     <style>
-        html {
-            height: 100%;
-            overflow: hidden;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: plum;
-            color: cadetblue;
+        
+        *{
             margin: 0;
             padding: 0;
-            perspective: 1px;
-            transform-style: preserve-3d;
-            height: 100%;
-            width: 100%;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            font-family: "Luna";
-            font-size: 18px;
+            align-items:center;
         }
 
-        .box {
-            width: 80%;
-            box-sizing: border-box;
-        }
-
-        header {
-            box-sizing: border-box;
+        body .box, html{
+            color: darkblue;
+            font-family: 'lato', sans-serif;
+            display:flex;
+            justify-content: center;
+            align-items:center;
             min-height: 100vh;
-            position: relative;
-            transform-style: inherit;
-            width: 100vw;
-            padding: 30vw 0;
         }
 
-        header h1 {
-            margin-top: -100px;
-            height: 0px;
-            bottom: 30px;
-        }
-
-        header,
-        header:before {
-            background: 50% 50% / cover;
-        }
-
-        header::before {
-            content: "";
-            position: absolute;
-            top: none;
-            margin: 0px;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: block;
-            background: url(image/flower.jpg);
+        body{
+            background-image:url(about.jpg);
             background-repeat: no-repeat;
-            background-size: cover;
-            transform-origin: center center 0;
-            transform: translateZ(-1px) scale(2);
-            z-index: -1;
-            min-height: 100vh;
+            background-position: bottom;
         }
 
-        header * {
-            font-weight: normal;
-            letter-spacing: 0.2em;
+        .button{
+            padding: 5px 10px;
             text-align: center;
-            margin: 0;
-            padding: 1em 0;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;  
+            background-color: powderblue;
         }
 
-        .data {
-            font-weight: bold;
-            width: 100%;
-            font-style: inherit;
-            font-family: 'Times New Roman';
-            background-color: purple;
+        .box{
+            position:relative;
+            max-width:400px;
+            max-height:200px;
+            padding:30px;
+            text-align: center;
+            background:rgba(255,255,255,.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,.5);
         }
 
-        p {
-            color: black;
+        .infoData{
+            position:relative;
+            max-width:400px;
+            max-height:300px;
+            padding:50px;
+            background:rgba(255,255,255,.2);
         }
-
 
         .btn {
             text-align: center;
             display: block;
-            margin-top: 250px;
+            margin-top: 350px;
             float: left;
             position: fixed;
         }
@@ -153,19 +116,16 @@ if (!isset($_SESSION['login_user'])) {
 
     <div id="profile">
         <b id="welcome">Welcome : <i><?php echo $login_session; echo "" ?></i></b>
-        <button style="background-color:powderblue;"  id="logout"><a href="logout.php">Log Out</a></button>
+        <button class="button" id="logout"><a href="logout.php">Log Out</a></button>
     </div>
-
     <div class="box">
         <header>
             <h1><strong>My profile</strong></h1>
-            <header>
                 <div class="btn">
                     <a href="homepage.php">
                         <button class="back_btn btn1">Back</button>
                     </a>
                 </div>
-                <br>
                 <br>
                 <br>
                 <h3><strong>Information</strong></h3>
@@ -193,11 +153,12 @@ if (!isset($_SESSION['login_user'])) {
                         echo "<div>
                         <h4>Full Name</h4>
                         <br> " . $row["user"] .
-                            "</div>
+                            "</div><br>
                     <div>
                         <h4>Phone</h4>
                         <br>" . $row["phone"] . "<br>
                     </div>
+                    <br>
                     <div>
                         <h4>Email</h4>
                         <br>" . $row["email"] . "<br></div>";
